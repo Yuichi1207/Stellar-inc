@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stellar | Virtual Character Studio</title>
+    <meta
+      name="description"
+      content="A cinematic company hero section built with kinetic typography, procedural noise, and interactive motion."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="intro-sequence">
+    <main class="site-shell">
+      <section class="hero" aria-label="Stellar hero">
+        <canvas class="noise-canvas" id="noiseCanvas" aria-hidden="true"></canvas>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="cursor-field" id="cursorField" aria-hidden="true"></div>
+
+        <header class="site-header">
+          <a class="brand" href="#" aria-label="Stellar home">
+            <span>Stellar</span>
+          </a>
+        </header>
+
+        <div class="hero-stage">
+          <div class="kinetic-layer layer-top" data-speed="-0.28" aria-hidden="true">
+            <div class="ticker ticker-fast">
+              <span>VISION IN MOTION VISION IN MOTION&nbsp;</span>
+              <span>VISION IN MOTION VISION IN MOTION&nbsp;</span>
+            </div>
+          </div>
+
+          <div class="kinetic-layer layer-outline" data-speed="0.18" aria-hidden="true">
+            <div class="ticker ticker-slow">
+              <span>STORY IN MOTION STORY IN MOTION&nbsp;</span>
+              <span>STORY IN MOTION STORY IN MOTION&nbsp;</span>
+            </div>
+          </div>
+
+          <div class="kinetic-layer layer-bottom" data-speed="0.34" aria-hidden="true">
+            <div class="ticker ticker-medium">
+              <span>BEYOND THE FRAME BEYOND THE FRAME&nbsp;</span>
+              <span>BEYOND THE FRAME BEYOND THE FRAME&nbsp;</span>
+            </div>
+          </div>
+
+          <div class="cross cross-a" aria-hidden="true"></div>
+          <div class="cross cross-b" aria-hidden="true"></div>
+          <div class="signal-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <h1 class="hero-title" aria-label="物語はここから始まる">
+            <span class="title-line" data-text="物語はここから始まる">
+              <span>物語は</span><span>ここから始まる</span>
+            </span>
+            <span class="title-ghost" aria-hidden="true">
+              <span>物語は</span><span>ここから始まる</span>
+            </span>
+          </h1>
+
+        </div>
+      </section>
+
+      <section class="service-section reveal-section" id="service" aria-labelledby="service-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <h2 id="service-title">Virtual Character Studio</h2>
+            <p>
+              キャラクターデザインから、Live2Dモデリング、デビューサポートまでワンストップで支援します。
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="card-copy">
+                <span class="card-number">01</span>
+                <h3>Character<br>Design</h3>
+                <p>世界観や個性を丁寧にヒアリングし、魅力を最大限に引き出すキャラクターデザインを制作します。</p>
+              </div>
+              <img src="./5¥.png" alt="キャラクターデザインの透過ビジュアル">
+            </article>
+
+            <article class="service-card">
+              <div class="card-copy">
+                <span class="card-number">02</span>
+                <h3>Live2D<br>Modeling</h3>
+                <p>高品質なモデリングで、自然で滑らかな表情・動きを実現。魅力が伝わるモデルを制作します。</p>
+              </div>
+              <img src="./1.png" alt="Live2Dモデリングの透過ビジュアル">
+            </article>
+
+            <article class="service-card">
+              <div class="card-copy">
+                <span class="card-number">03</span>
+                <h3>Debut<br>Support</h3>
+                <p>配信環境の構築、素材制作、アカウント設計まで、安心のデビューをサポートします。</p>
+              </div>
+              <img src="./3.png" alt="デビューサポートの透過ビジュアル">
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="ip-section reveal-section" id="ip-contents" aria-labelledby="ip-title">
+        <div class="section-inner">
+          <div class="ip-heading">
+            <h2 id="ip-title">IP Contents</h2>
+            <p>
+              オリジナルキャラクターやデジタルコンテンツの企画・制作を通じて、世界観を持つIPを生み出しています。
+            </p>
+          </div>
+
+          <div class="ip-grid">
+            <article class="ip-card">
+              <div class="ip-card-copy">
+                <span class="card-number">01</span>
+                <h3>Original<br>Character</h3>
+                <p>世界観やコンセプトを設計し、オリジナルキャラクターを企画・制作します。</p>
+              </div>
+              <img class="ip-visual ip-visual-image" src="./6..png" alt="オリジナルキャラクターのビジュアル">
+            </article>
+
+            <article class="ip-card">
+              <div class="ip-card-copy">
+                <span class="card-number">02</span>
+                <h3>Digital<br>Contents</h3>
+                <p>イラスト、デジタル雑誌、ショート動画、SNSコンテンツなどを制作・販売します。</p>
+              </div>
+              <img class="ip-visual ip-visual-image" src="./7.png" alt="デジタルコンテンツのビジュアル">
+            </article>
+
+            <article class="ip-card">
+              <div class="ip-card-copy">
+                <span class="card-number">03</span>
+                <h3>IP<br>Development</h3>
+                <p>グッズ展開やライセンス、ブランド展開を通じて、IPを育てていきます。</p>
+              </div>
+              <img class="ip-visual ip-visual-image" src="./8.png" alt="IP展開グッズのビジュアル">
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="company-section reveal-section" id="company" aria-labelledby="company-title">
+        <div class="studio-word" aria-hidden="true">studio</div>
+        <div class="company-inner">
+          <div class="blueprint-panel">
+            <img src="./4.png" alt="キャラクター制作の設計図">
+          </div>
+
+          <div class="company-copy">
+            <h2 id="company-title">Company</h2>
+            <div class="company-rule" aria-hidden="true"></div>
+            <p>
+              IPコンテンツの企画・制作と、<br>
+              バーチャルキャラクター制作を手がける<br>
+              クリエイティブスタジオです。
+            </p>
+
+            <a class="wide-link company-link" href="./company.html">
+              <span class="wide-link-label" data-text="会社案内を見る">会社案内を見る</span>
+              <span class="wide-link-arrow" aria-hidden="true">
+                <span></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+          <div class="footer-main">
+            <div class="footer-company">
+              <a class="footer-brand" href="#">Stellar</a>
+              <p>ステラー株式会社</p>
+              <p>大阪府豊中市夕日丘３−１２−３１</p>
+            </div>
+
+            <div class="footer-menu">
+              <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="./index.html">Home</a>
+                <a href="#service">Service</a>
+                <a href="./company.html">Company</a>
+              </nav>
+              <a class="back-to-top" href="#" aria-label="Back to top">↑</a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <small>© Stellar All Rights Reserved.</small>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
