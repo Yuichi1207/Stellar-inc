@@ -2214,16 +2214,55 @@ button {
     min-height: 330px;
   }
 
+  .service-card::before {
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(243, 243, 239, 0.98) 0 54%, rgba(243, 243, 239, 0.84) 70%, rgba(243, 243, 239, 0.22) 100%);
+    opacity: 1;
+    transform: none;
+  }
+
+  .service-card:hover::before {
+    opacity: 1;
+    transform: none;
+  }
+
   .ip-card {
     min-height: 330px;
   }
 
   .service-card img {
-    width: 76%;
+    z-index: 1;
+    width: 58%;
+    opacity: 0.5;
+    transform: none;
+  }
+
+  .service-card:nth-child(1) img {
+    right: -8%;
+    bottom: -2%;
+    width: 56%;
+  }
+
+  .service-card:nth-child(2) img {
+    right: -14%;
+    bottom: -10%;
+    width: 58%;
+  }
+
+  .service-card:nth-child(3) img {
+    right: -18%;
+    bottom: -8%;
+    width: 60%;
+  }
+
+  .service-card:hover img {
+    opacity: 0.56;
+    transform: none;
   }
 
   .card-copy {
-    width: min(76%, 280px);
+    z-index: 3;
+    width: min(78%, 286px);
     padding: 24px;
   }
 
