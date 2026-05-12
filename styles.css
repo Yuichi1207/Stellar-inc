@@ -1159,6 +1159,7 @@ button {
   width: 2px;
   height: 30px;
   border-radius: 999px;
+  transform: translateY(3px);
 }
 
 .back-to-top::after {
@@ -1167,7 +1168,7 @@ button {
   border-top: 2px solid currentColor;
   border-left: 2px solid currentColor;
   background: transparent;
-  transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-8px) rotate(45deg);
 }
 
 .back-to-top:hover {
