@@ -1136,15 +1136,38 @@ button {
 }
 
 .back-to-top {
+  position: relative;
   display: grid;
   place-items: center;
   width: 64px;
   aspect-ratio: 1;
   border: 1px solid rgba(244, 244, 239, 0.82);
   border-radius: 999px;
-  font-size: 34px;
+  font-size: 0;
   line-height: 1;
   transition: background 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+  position: absolute;
+  content: "";
+  background: currentColor;
+}
+
+.back-to-top::before {
+  width: 2px;
+  height: 30px;
+  border-radius: 999px;
+}
+
+.back-to-top::after {
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  background: transparent;
+  transform: translateY(-10px) rotate(45deg);
 }
 
 .back-to-top:hover {
@@ -2193,11 +2216,14 @@ button {
   }
 
   .footer-menu {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 28px;
   }
 
   .footer-nav {
+    flex-wrap: wrap;
     gap: 28px;
   }
 
