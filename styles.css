@@ -351,8 +351,8 @@ button {
   white-space: nowrap;
   transform: translate(-50%, -50%);
   text-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.92),
-    0 22px 42px rgba(0, 0, 0, 0.74);
+    0 0 16px rgba(244, 244, 239, 0.16),
+    0 0 34px rgba(0, 255, 255, 0.08);
 }
 
 .title-line,
@@ -368,7 +368,12 @@ button {
 
 .title-line {
   position: relative;
+  filter: drop-shadow(0 0 12px rgba(244, 244, 239, 0.1));
   animation: title-impact 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.title-line::selection {
+  background: rgba(0, 255, 255, 0.3);
 }
 
 .title-line::before,
@@ -381,17 +386,19 @@ button {
 }
 
 .title-line::before {
-  color: rgba(255, 255, 255, 0.82);
-  transform: translate(-6px, -2px);
+  color: rgba(0, 255, 255, 0.78);
+  text-shadow: 0 0 18px rgba(0, 255, 255, 0.52);
+  transform: translate(-8px, -2px);
   clip-path: inset(0 0 52% 0);
-  animation: title-glitch-a 4.2s steps(1, end) infinite;
+  animation: title-glitch-a 3.4s steps(1, end) infinite;
 }
 
 .title-line::after {
-  color: rgba(255, 255, 255, 0.7);
-  transform: translate(7px, 3px);
+  color: rgba(255, 0, 196, 0.72);
+  text-shadow: 0 0 18px rgba(255, 0, 196, 0.48);
+  transform: translate(8px, 3px);
   clip-path: inset(48% 0 0 0);
-  animation: title-glitch-b 3.6s steps(1, end) infinite;
+  animation: title-glitch-b 2.9s steps(1, end) infinite;
 }
 
 .title-ghost {
@@ -2010,34 +2017,51 @@ button {
 
 @keyframes title-glitch-a {
   0%,
-  76%,
+  62%,
   100% {
     opacity: 0;
   }
-  77% {
-    opacity: 1;
-    transform: translate(-10px, -3px);
+  8% {
+    opacity: 0.92;
+    transform: translate(-12px, -3px);
   }
-  78% {
-    opacity: 0.2;
-    transform: translate(5px, 2px);
+  9% {
+    opacity: 0.18;
+    transform: translate(7px, 1px);
   }
-  79% {
+  11% {
+    opacity: 0;
+  }
+  64% {
+    opacity: 0.88;
+    transform: translate(-10px, 2px);
+  }
+  66% {
     opacity: 0;
   }
 }
 
 @keyframes title-glitch-b {
   0%,
-  62%,
+  54%,
   100% {
     opacity: 0;
   }
-  63% {
-    opacity: 0.9;
-    transform: translate(10px, 3px);
+  14% {
+    opacity: 0.72;
+    transform: translate(11px, 3px);
   }
-  64% {
+  16% {
+    opacity: 0;
+  }
+  56% {
+    opacity: 0.82;
+    transform: translate(14px, -2px);
+  }
+  57% {
+    opacity: 0.16;
+  }
+  59% {
     opacity: 0;
   }
 }
