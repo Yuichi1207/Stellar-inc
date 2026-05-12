@@ -515,8 +515,8 @@ button {
   max-width: none;
   margin: 0;
   font-size: clamp(14px, 1.05vw, 17px);
-  font-weight: 800;
-  line-height: 1.75;
+  font-weight: 500;
+  line-height: 1.9;
   white-space: nowrap;
 }
 
@@ -634,8 +634,8 @@ button {
 .card-copy p {
   margin: 0;
   font-size: clamp(12px, 1vw, 14px);
-  font-weight: 700;
-  line-height: 1.75;
+  font-weight: 500;
+  line-height: 1.85;
 }
 
 .wide-link {
@@ -824,8 +824,8 @@ button {
   margin: 0;
   color: rgba(244, 244, 239, 0.86);
   font-size: clamp(14px, 1.05vw, 17px);
-  font-weight: 800;
-  line-height: 1.75;
+  font-weight: 500;
+  line-height: 1.9;
   white-space: nowrap;
 }
 
@@ -895,8 +895,8 @@ button {
   margin: 0;
   color: rgba(244, 244, 239, 0.82);
   font-size: clamp(12px, 0.95vw, 14px);
-  font-weight: 800;
-  line-height: 1.8;
+  font-weight: 500;
+  line-height: 1.9;
 }
 
 .ip-visual {
@@ -1069,7 +1069,7 @@ button {
 .company-copy > p:not(.eyebrow) {
   margin: 0 0 clamp(28px, 4vw, 52px);
   font-size: clamp(18px, 1.55vw, 28px);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.85;
 }
 
@@ -1110,7 +1110,7 @@ button {
   margin: 0;
   color: rgba(244, 244, 239, 0.72);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.75;
 }
 
@@ -1407,6 +1407,10 @@ button {
   animation: message-title-in 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.message-hero h1 span {
+  display: inline;
+}
+
 .message-hero p {
   display: flex;
   align-items: center;
@@ -1415,7 +1419,7 @@ button {
   margin: clamp(26px, 3vw, 42px) 0 0;
   color: rgba(244, 244, 239, 0.78);
   font-size: clamp(14px, 1vw, 17px);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .message-hero p span:last-child {
@@ -1508,7 +1512,7 @@ button {
 .founder-copy p {
   margin: 0;
   font-size: clamp(14px, 1.05vw, 17px);
-  font-weight: 800;
+  font-weight: 500;
   line-height: 2.05;
 }
 
@@ -1544,7 +1548,7 @@ button {
 .founder-profile p {
   margin: 0 0 14px;
   font-size: clamp(14px, 1.1vw, 18px);
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.45;
 }
 
@@ -1626,13 +1630,13 @@ button {
 
 .overview-list dt {
   font-size: clamp(14px, 1vw, 17px);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.55;
 }
 
 .overview-list dd {
   font-size: clamp(19px, 1.65vw, 28px);
-  font-weight: 900;
+  font-weight: 500;
   line-height: 1.55;
 }
 
@@ -2210,6 +2214,10 @@ button {
   .message-hero h1 {
     width: min(100%, 440px);
     font-size: clamp(36px, 10vw, 56px);
+  }
+
+  .message-hero h1 span {
+    display: block;
   }
 
   .message-word {
